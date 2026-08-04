@@ -1,0 +1,90 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores public and private profile information for each user. Serves as the primary record.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The user's unique ID from Firebase Auth." },
+        "displayName": { "type": "string", "description": "The user's public display name." },
+        "photoURL": { "type": "string", "format": "uri", "description": "URL of the user's profile picture." },
+        "gender": { "type": "string", "enum": ["male", "female", "other", "prefer_not"], "description": "User's self-identified gender for filtering." },
+        "interests": { "type": "array", "items": { "type": "string" }, "description": "A list of user's travel interests (e.g., 'hiking', 'foodie'). Max 10." },
+        "isVerified": { "type": "boolean", "default": false, "description": "Whether the user's identity has been verified by an admin process." },
+        "blocked": { "type": "object", "additionalProperties": { "type": "boolean", "const": true }, "description": "A map of UIDs that this user has blocked. Key is the blocked UID, value is true." },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "lastActiveAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "LiveVisibility": {
+      "title": "Live Visibility",
+      "description": "A document that exists ONLY when a user is actively sharing their approximate location. This collection is the core of the geo-queries.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The user's ID. Matches the document ID." },
+        "isVisible": { "type": "boolean", "const": true, "description": "Always true. Queries will filter for this." },
+        "visibilityUntil": { "type": "string", "format": "date-time", "description": "Timestamp when this document becomes invalid and should be ignored/deleted." },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Timestamp of the last location update." },
+        "geohash": { "type": "string", "description": "Full-precision geohash of the user's location." },
+        "geohash5": { "type": "string", "description": "5-character geohash prefix for querying ~2.5km radius." },
+        "geohash6": { "type": "string", "description": "6-character geohash prefix for querying ~600m radius." },
+        "intentTags": { "type": "array", "items": { "type": "string" }, "description": "User's current intent, e.g., 'cab_share', 'explore'." },
+        "areaLabel": { "type": "string", "description": "A human-readable label for the area, e.g., 'Connaught Place Area'." }
+      },
+      "readOnlyFields": ["geohash5", "geohash6", "areaLabel"],
+      "privateFields": ["lat", "lng"]
+    },
+    "NearbyActivity": {
+      "title": "Nearby Activity",
+      "description": "A user-created, time-limited micro-activity at a specific location.",
+      "type": "object",
+      "properties": {
+        "creatorUid": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "intentType": { "type": "string", "enum": ["cab_share", "cafe", "explore", "photowalk", "other"] },
+        "cityId": { "type": "string" },
+        "geohash": { "type": "string" },
+        "geohash6": { "type": "string" },
+        "visibilityUntil": { "type": "string", "format": "date-time", "description": "Expiry time for the activity." },
+        "maxParticipants": { "type": "number" },
+        "joinedUids": { "type": "array", "items": { "type": "string" } },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "status": { "type": "string", "enum": ["active", "closed", "expired"] }
+      }
+    },
+    "Report": {
+      "title": "User/Activity Report",
+      "description": "A report filed by a user against another user or an activity.",
+      "type": "object",
+      "properties": {
+        "reporterUid": { "type": "string" },
+        "reportedUid": { "type": "string" },
+        "targetId": { "type": "string", "description": "The ID of the user or activity being reported." },
+        "type": { "type": "string", "enum": ["user", "activity"] },
+        "reason": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "evidence": { "type": "string", "description": "Optional context or message ID." }
+      }
+    },
+    "ConnectRequest": {
+      "title": "Connection Request",
+      "description": "A request from one user to connect with another, typically initiated from the 'Nearby Travellers' screen.",
+      "type": "object",
+      "properties": {
+        "fromUid": { "type": "string" },
+        "toUid": { "type": "string" },
+        "message": { "type": "string", "description": "A short, optional introductory message." },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "status": { "type": "string", "enum": ["pending", "accepted", "rejected", "blocked"] }
+      }
+    }
+  },
+  "firestore": {
+    "/users/{uid}": { "schema": { "$ref": "#/entities/UserProfile" } },
+    "/liveVisibility/{uid}": { "schema": { "$ref": "#/entities/LiveVisibility" } },
+    "/nearbyActivities/{activityId}": { "schema": { "$ref": "#/entities/NearbyActivity" } },
+    "/reports/{reportId}": { "schema": { "$ref": "#/entities/Report" } },
+    "/connectRequests/{requestId}": { "schema": { "$ref": "#/entities/ConnectRequest" } }
+  }
+}

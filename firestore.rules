@@ -1,0 +1,66 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    // ---------------- Users ----------------
+    match /users/{userId} {
+      allow read: if true;
+      allow write: if signedIn() && request.auth.uid == userId;
+    }
+
+    // ---------------- Trip reviews ----------------
+    // Review sirf tab dikhta hai jab 'revealed' ho — warna log ek dusre ka
+    // padh kar apna badal dete hain.
+    match /reviews/{reviewId} {
+      allow read: if signedIn() && (
+        resource.data.visibility == 'revealed' ||
+        resource.data.reviewerId == request.auth.uid
+      );
+
+      // Apne naam se hi review likh sakte ho, aur sirf ek baar.
+      allow create: if signedIn()
+        && request.resource.data.reviewerId == request.auth.uid
+        && request.resource.data.visibility == 'pending';
+
+      // Content edit karne ki permission nahi — sirf reveal flag flip ho sakta hai.
+      // Warna log submit ke baad review badal dete hain.
+      allow update: if signedIn()
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['visibility'])
+        && request.resource.data.visibility == 'revealed';
+
+      allow delete: if false;
+    }
+
+    // ---------------- Drafts ----------------
+    // Adhoora review. Sirf likhne wala hi padh/likh sakta hai.
+    match /reviewDrafts/{draftId} {
+      allow read, write: if signedIn()
+        && draftId.split('_')[1] == request.auth.uid;
+    }
+
+    // ---------------- Safety reports ----------------
+    // Sabse sensitive data. Koi bhi user ise PADH nahi sakta — sirf likh
+    // sakta hai. Padhna sirf admin SDK se hota hai (server side).
+    // Isi wajah se log sach likhte hain.
+    match /safetyReports/{reportId} {
+      allow create: if signedIn()
+        && request.resource.data.reporterId == request.auth.uid;
+      allow read, update, delete: if false;
+    }
+
+    // ---------------- Baaki sab ----------------
+    // TODO: har collection ke apne rules likhne hain (groups, messages,
+    // travelPlans). Abhi ye khula hai — matlab koi bhi logged-in user
+    // kisi ka bhi data badal sakta hai. Play Store launch se pehle
+    // isko theek karna zaroori hai.
+    match /{document=**} {
+      allow read, write: if signedIn();
+    }
+  }
+}

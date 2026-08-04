@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ------------------------------------------------------------------
+       Sathimate palette — "pine & marigold"
+       Deep pine green = bharosa/trust (the resting state of the UI).
+       Marigold = the accent. Genda phool har Indian shubh mauke par hota
+       hai — ye rang yahan ka lagta hai, imported nahi.
+       Background pure white nahi hai, halka warm paper tone hai.
+       ------------------------------------------------------------------ */
+    --background: 40 30% 98%;
+    --foreground: 165 14% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 165 14% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 165 14% 12%;
+    --primary: 165 52% 22%;
+    --primary-foreground: 40 30% 97%;
+    --secondary: 40 22% 94%;
+    --secondary-foreground: 165 30% 18%;
+    --muted: 40 18% 93%;
+    --muted-foreground: 165 8% 40%;
+    --accent: 32 92% 52%;
+    --accent-foreground: 28 45% 12%;
+    --destructive: 358 70% 48%;
+    --destructive-foreground: 40 30% 97%;
+    --border: 40 14% 87%;
+    --input: 40 14% 87%;
+    --ring: 165 52% 22%;
+    --radius: 0.875rem;
+  }
+
+  .dark {
+    /* Dark mode neutral grey nahi hai — thoda green-shifted hai, taaki
+       light mode se rishta bana rahe. */
+    --background: 168 18% 8%;
+    --foreground: 40 22% 94%;
+    --card: 168 16% 11%;
+    --card-foreground: 40 22% 94%;
+    --popover: 168 16% 11%;
+    --popover-foreground: 40 22% 94%;
+    --primary: 158 52% 46%;
+    --primary-foreground: 168 30% 8%;
+    --secondary: 168 12% 16%;
+    --secondary-foreground: 40 22% 94%;
+    --muted: 168 12% 16%;
+    --muted-foreground: 160 8% 62%;
+    --accent: 36 90% 58%;
+    --accent-foreground: 28 45% 10%;
+    --destructive: 358 62% 42%;
+    --destructive-foreground: 40 22% 94%;
+    --border: 168 10% 20%;
+    --input: 168 10% 20%;
+    --ring: 158 52% 46%;
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
+
+@layer components {
+  .btn-arrow {
+    @apply text-muted-foreground;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .group:hover .btn-arrow {
+    transform: translateX(4px);
+    @apply text-accent;
+  }
+
+  @keyframes slow-zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.15); }
+  }
+
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-gradient {
+    background-size: 200% auto;
+    animation: gradient 5s ease infinite;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+  }
+}

@@ -1,0 +1,659 @@
+{
+  "placeholderImages": [
+    {
+      "id": "site-logo",
+      "description": "The main logo for the Sathimate website.",
+      "imageUrl": "/my-images/logo.png",
+      "imageHint": "sathimate logo"
+    },
+    {
+      "id": "hero",
+      "description": "A beautiful, calm landscape representing the start of a journey.",
+      "imageUrl": "/my-images/hero.png",
+      "imageHint": "calm landscape"
+    },
+    {
+      "id": "auth-hero",
+      "description": "A scenic view of mountains and a road, symbolizing a journey.",
+      "imageUrl": "https://images.unsplash.com/photo-1645528388553-24668f095af3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxqb3VybmV5JTIwcm9hZCUyMG1vdW50YWluc3xlbnwwfHx8fDE3NzE5NjAxMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "journey road mountains"
+    },
+    {
+      "id": "about-hero",
+      "description": "An abstract image of a world map, representing global travel and connection.",
+      "imageUrl": "https://images.unsplash.com/photo-1718498576333-a331226b33a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMG1hcHxlbnwwfHx8fDE3NzE4NjkyNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract map"
+    },
+    {
+      "id": "home-hero",
+      "description": "A group of diverse friends laughing and planning a trip on a map.",
+      "imageUrl": "/my-images/hero.png",
+      "imageHint": "friends travel planning"
+    },
+    {
+      "id": "user-1",
+      "description": "Avatar for a user.",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzE5MzY2Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-2",
+      "description": "Avatar for a user.",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzE5MzY2Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-3",
+      "description": "Avatar for a user.",
+      "imageUrl": "https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcxOTM2NjM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-4",
+      "description": "Avatar for a user.",
+      "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzE5MzY2Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "gallery-1",
+      "description": "A stunning mountain range at sunrise.",
+      "imageUrl": "https://images.unsplash.com/photo-1500622944204-b135684e99fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bmF0dXJlJTIwbGFuZHNjYXBlfGVufDB8fHx8MTc3MTk1MTM4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nature landscape"
+    },
+    {
+      "id": "gallery-2",
+      "description": "A bustling city street at night.",
+      "imageUrl": "https://images.unsplash.com/photo-1588312744377-2adfb7b8578a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjaXR5JTIwbmlnaHR8ZW58MHx8fHwxNzcxOTU5NjEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city night"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Abstract colorful shapes and patterns.",
+      "imageUrl": "https://images.unsplash.com/photo-1659905323699-7d7c8e0328d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGNvbG9yZnVsfGVufDB8fHx8MTc3MTg2MzM5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract colorful"
+    },
+    {
+      "id": "gallery-4",
+      "description": "A serene beach with turquoise water.",
+      "imageUrl": "https://images.unsplash.com/photo-1541417904950-b855846fe074?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiZWFjaCUyMHN1bW1lcnxlbnwwfHx8fDE3NzE5NjAxMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beach summer"
+    },
+    {
+      "id": "gallery-5",
+      "description": "A dense forest with tall trees.",
+      "imageUrl": "https://images.unsplash.com/photo-1667591518659-6d25dbcbd393?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmb3Jlc3QlMjBuYXR1cmV8ZW58MHx8fHwxNzcxOTU3Njk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "forest nature"
+    },
+    {
+      "id": "gallery-6",
+      "description": "A futuristic cityscape with flying vehicles.",
+      "imageUrl": "https://images.unsplash.com/photo-1566262258598-53deb7089bf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnV0dXJpc3RpYyUyMGNpdHl8ZW58MHx8fHwxNzcxOTQyNTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic city"
+    },
+    {
+      "id": "dest-manali",
+      "imageUrl": "/my-images/manali_card.jpg",
+      "imageHint": "Manali landscape"
+    },
+    {
+      "id": "dest-kasol",
+      "imageUrl": "/my-images/manali_parvati.jpg",
+      "imageHint": "Kasol Parvati valley"
+    },
+    {
+      "id": "dest-udaipur",
+      "imageUrl": "https://images.unsplash.com/photo-1675772120474-b9d7811220f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxVZGFpcHVyJTIwbGFrZSUyMHBhbGFjZXxlbnwwfHx8fDE3NzE3NTg5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Udaipur lake palace"
+    },
+    {
+      "id": "dest-rishikesh",
+      "imageUrl": "https://images.unsplash.com/photo-1709140355573-fb835d12bd92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxSaXNoaWtlc2glMjBicmlkZ2V8ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Rishikesh bridge"
+    },
+    {
+      "id": "dest-jaipur",
+      "imageUrl": "https://images.unsplash.com/photo-1677868493135-d6edf6927df6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxKYWlwdXIlMjBwYWxhY2V8ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Jaipur palace"
+    },
+    {
+      "id": "dest-sikkim",
+      "imageUrl": "https://images.unsplash.com/photo-1707098197566-38cdb1a98908?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxTaWtraW0lMjBtb25hc3Rlcnl8ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Sikkim monastery",
+      "description": "A beautiful monastery in Sikkim with mountains in the background."
+    },
+    {
+      "id": "state-rajasthan-banner",
+      "imageUrl": "https://images.unsplash.com/photo-1705039439212-c3130e4c62a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyYWphc3RoYW4lMjBwYWxhY2V8ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rajasthan palace"
+    },
+    {
+      "id": "state-rajasthan-city-jaipur",
+      "imageUrl": "https://images.unsplash.com/photo-1602643163983-ed0babc39797?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxqYWlwdXIlMjBjaXR5fGVufDB8fHx8MTc3MTc1ODk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jaipur city"
+    },
+    {
+      "id": "state-rajasthan-city-udaipur",
+      "imageUrl": "https://images.unsplash.com/photo-1715628256203-6f8a5c9adaac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1ZGFpcHVyJTIwbGFrZXxlbnwwfHx8fDE3NzE3NTg5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "udaipur lake"
+    },
+    {
+      "id": "state-rajasthan-city-jodhpur",
+      "imageUrl": "https://images.unsplash.com/photo-1647946411346-f5d403d483c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxqb2RocHVyJTIwY2l0eXxlbnwwfHx8fDE3NzE3NTg5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jodhpur city"
+    },
+    {
+      "id": "state-rajasthan-place-hawamahal",
+      "imageUrl": "https://images.unsplash.com/photo-1602643163983-ed0babc39797?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoYXdhJTIwbWFoYWx8ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hawa mahal"
+    },
+    {
+      "id": "state-rajasthan-place-mehrangarh",
+      "imageUrl": "https://images.unsplash.com/photo-1602643454724-21d5a40722db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtZWhyYW5nYXJoJTIwZm9ydHxlbnwwfHx8fDE3NzE3NTg5ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mehrangarh fort"
+    },
+    {
+      "id": "state-rajasthan-place-pichola",
+      "imageUrl": "https://images.unsplash.com/photo-1703092289078-ff03b771237c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYWtlJTIwcGljaG9sYXxlbnwwfHx8fDE3NzE3NTg5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lake pichola"
+    },
+    {
+      "id": "state-rajasthan-place-joharibazaar",
+      "imageUrl": "https://images.unsplash.com/photo-1766585722764-f0727e820e4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmRpYW4lMjBtYXJrZXQlMjBqZXdlbHJ5fGVufDB8fHx8MTc3MTc1ODk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian market jewelry"
+    },
+    {
+      "id": "state-rajasthan-gallery-1",
+      "imageUrl": "https://images.unsplash.com/photo-1639575668829-c56a82db9f00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyYWphc3RoYW5pJTIwY3VsdHVyZXxlbnwwfHx8fDE3NzE3NTg5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rajasthani culture"
+    },
+    {
+      "id": "state-rajasthan-gallery-2",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1550489518-40f49ba4bf20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjYW1lbCUyMGRlc2VydHxlbnwwfHx8fDE3NzE3NTg5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "camel desert"
+    },
+    {
+      "id": "state-rajasthan-gallery-3",
+      "imageUrl": "https://images.unsplash.com/photo-1646807930564-9c845294ab38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyYWphc3RoYW5pJTIwZm9vZHxlbnwwfHx8fDE3NzE3NTg5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rajasthani food"
+    },
+    {
+      "id": "state-kerala-banner",
+      "imageUrl": "https://images.unsplash.com/photo-1661174607003-d9d36388c916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8a2VyYWxhJTIwYmFja3dhdGVyc3xlbnwwfHx8fDE3NzE5MTAxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kerala backwaters"
+    },
+    {
+      "id": "state-kerala-city-kochi",
+      "imageUrl": "https://images.unsplash.com/photo-1629064511726-841ce84f39df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxrb2NoaSUyMGZpc2hpbmclMjBuZXRzfGVufDB8fHx8MTc3MTk2MDExMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kochi fishing nets"
+    },
+    {
+      "id": "state-kerala-city-munnar",
+      "imageUrl": "https://images.unsplash.com/photo-1730351111586-1c98c8049f6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtdW5uYXIlMjB0ZWElMjBwbGFudGF0aW9ufGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "munnar tea plantation"
+    },
+    {
+      "id": "state-kerala-city-alleppey",
+      "imageUrl": "https://images.unsplash.com/photo-1646487448562-9c98c2651549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhbGxlcHBleSUyMGhvdXNlYm9hdHxlbnwwfHx8fDE3NzE5NjAxMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "alleppey houseboat"
+    },
+    {
+      "id": "state-kerala-place-backwaters",
+      "imageUrl": "https://images.unsplash.com/photo-1705838617550-ae0573ebefc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxrZXJhbGElMjBiYWNrd2F0ZXJzJTIwYm9hdHxlbnwwfHx8fDE3NzE5NjAxMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kerala backwaters boat"
+    },
+    {
+      "id": "state-kerala-place-eravikulam",
+      "imageUrl": "https://picsum.photos/seed/keralanilgiri/600/400",
+      "imageHint": "nilgiri tahr mountain"
+    },
+    {
+      "id": "state-kerala-place-varkala",
+      "imageUrl": "https://images.unsplash.com/photo-1636139018307-aedac8fcde67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx2YXJrYWxhJTIwYmVhY2glMjBjbGlmZnxlbnwwfHx8fDE3NzE5NjAxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "varkala beach cliff"
+    },
+    {
+      "id": "state-kerala-gallery-1",
+      "imageUrl": "https://images.unsplash.com/photo-1715181751269-2c8325468b73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxrYXRoYWthbGklMjBkYW5jZXJ8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kathakali dancer"
+    },
+    {
+      "id": "state-kerala-gallery-2",
+      "imageUrl": "https://images.unsplash.com/photo-1569502958480-f55a56559483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxrZXJhbGElMjBzYWRoeWElMjBmb29kfGVufDB8fHx8MTc3MTk2MDExMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kerala sadhya food"
+    },
+    {
+      "id": "state-kerala-gallery-3",
+      "imageUrl": "https://images.unsplash.com/photo-1770644426789-4fe022415ab7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGljZSUyMHBsYW50YXRpb258ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spice plantation"
+    },
+    {
+      "id": "dest-kerala",
+      "imageUrl": "/my-images/kerala_card.jpg",
+      "imageHint": "Kerala backwaters",
+      "description": "A serene view of the Kerala backwaters with a houseboat."
+    },
+    {
+      "id": "state-sikkim-banner",
+      "imageUrl": "https://images.unsplash.com/photo-1706203146004-45cd3baf0d3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWtraW0lMjBtb25hc3RlcnklMjBtb3VudGFpbnN8ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sikkim monastery mountains"
+    },
+    {
+      "id": "state-sikkim-city-gangtok",
+      "imageUrl": "https://images.unsplash.com/photo-1748811249251-a946f8a3ffc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYW5ndG9rJTIwY2l0eXxlbnwwfHx8fDE3NzE3NTg5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gangtok city"
+    },
+    {
+      "id": "state-sikkim-place-tsomgo",
+      "imageUrl": "https://images.unsplash.com/photo-1671846714332-68faabe9db62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0c29tZ28lMjBsYWtlJTIwc2lra2ltfGVufDB8fHx8MTc3MTc1ODk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tsomgo lake sikkim"
+    },
+    {
+      "id": "state-sikkim-place-mgmarg",
+      "imageUrl": "https://images.unsplash.com/photo-1707202318188-e3fd6e3a4410?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZyUyMG1hcmclMjBnYW5ndG9rfGVufDB8fHx8MTc3MTc1ODk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mg marg gangtok"
+    },
+    {
+      "id": "state-sikkim-place-rumtek",
+      "imageUrl": "https://images.unsplash.com/photo-1653315136769-f31cff4dea94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxydW10ZWslMjBtb25hc3RlcnklMjBzaWtraW18ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rumtek monastery sikkim"
+    },
+    {
+      "id": "state-sikkim-place-coffeeshop",
+      "imageUrl": "https://images.unsplash.com/photo-1717451062584-609a1686122a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYWZlJTIwd2l0aCUyMHZpZXd8ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cafe with view"
+    },
+    {
+      "id": "state-sikkim-place-tibetfood",
+      "imageUrl": "https://picsum.photos/seed/tibetfood/600/400",
+      "imageHint": "sikkim food momos"
+    },
+    {
+      "id": "state-sikkim-place-nathula",
+      "imageUrl": "https://images.unsplash.com/photo-1542893849-b14a2c62aacb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBhc3MlMjBoaW1hbGF5YXN8ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain pass himalayas"
+    },
+    {
+      "id": "state-sikkim-gallery-1",
+      "imageUrl": "https://images.unsplash.com/photo-1600402808924-9c591a6dace8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzaWtraW0lMjBwcmF5ZXIlMjBmbGFnc3xlbnwwfHx8fDE3NzE3NTg5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sikkim prayer flags"
+    },
+    {
+      "id": "state-sikkim-gallery-2",
+      "imageUrl": "https://images.unsplash.com/photo-1687920048523-2946f13f8479?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzaWtraW0lMjByb2FkfGVufDB8fHx8MTc3MTc1ODk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sikkim road"
+    },
+    {
+      "id": "state-sikkim-gallery-3",
+      "imageUrl": "https://images.unsplash.com/photo-1615966192539-f1731963b19a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWtraW0lMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sikkim landscape"
+    },
+    {
+      "id": "state-himachal-banner",
+      "imageUrl": "https://images.unsplash.com/photo-1614095431374-c5e71970d70c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoaW1hY2hhbCUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NzE5NjAxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "himachal landscape"
+    },
+    {
+      "id": "state-himachal-city-shimla",
+      "imageUrl": "https://images.unsplash.com/photo-1712753849140-7e8e96f8816f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzaGltbGElMjBjaXR5fGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shimla city"
+    },
+    {
+      "id": "state-himachal-city-manali",
+      "imageUrl": "https://images.unsplash.com/photo-1713981276455-d68e77ed9e1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW5hbGklMjB0b3dufGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "manali town"
+    },
+    {
+      "id": "state-himachal-city-dharamshala",
+      "imageUrl": "https://images.unsplash.com/photo-1596573027619-5bb9060e089b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaGFyYW1zaGFsYSUyMG1vbmFzdGVyeXxlbnwwfHx8fDE3NzE5NjAxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dharamshala monastery"
+    },
+    {
+      "id": "state-himachal-place-rohtang",
+      "imageUrl": "https://images.unsplash.com/photo-1563630257272-e43377f07482?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyb2h0YW5nJTIwcGFzcyUyMHNub3d8ZW58MHx8fHwxNzcxOTYwMTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rohtang pass snow"
+    },
+    {
+      "id": "state-himachal-place-solang",
+      "imageUrl": "https://images.unsplash.com/photo-1730638641736-594408d5296b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb2xhbmclMjB2YWxsZXklMjBwYXJhZ2xpZGluZ3xlbnwwfHx8fDE3NzE5NjAxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "solang valley paragliding"
+    },
+    {
+      "id": "state-himachal-place-parvati",
+      "imageUrl": "https://images.unsplash.com/photo-1652379379347-5ab81f8d03fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwYXJ2YXRpJTIwdmFsbGV5JTIwcml2ZXJ8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "parvati valley river"
+    },
+    {
+      "id": "state-himachal-gallery-1",
+      "imageUrl": "https://images.unsplash.com/photo-1718676006043-7bc56c5133b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcmF5ZXIlMjBmbGFncyUyMG1vdW50YWluc3xlbnwwfHx8fDE3NzE5NjAxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "prayer flags mountains"
+    },
+    {
+      "id": "state-himachal-gallery-2",
+      "imageUrl": "https://images.unsplash.com/photo-1583467875212-de8c3a4da6a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoaW1hY2hhbCUyMG1vdW50YWluJTIwcm9hZHxlbnwwfHx8fDE3NzE5NjAxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "himachal mountain road"
+    },
+    {
+      "id": "state-himachal-gallery-3",
+      "imageUrl": "https://images.unsplash.com/photo-1717748973113-3e6f03ee55db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaW1hbGF5YW4lMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "himalayan landscape"
+    },
+    {
+      "id": "state-goa-banner",
+      "imageUrl": "https://images.unsplash.com/photo-1590393532495-bdcdf6984e57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxnb2ElMjBiZWFjaCUyMHN1bnNldHxlbnwwfHx8fDE3NzE5NjAxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "goa beach sunset"
+    },
+    {
+      "id": "state-goa-city-panjim",
+      "imageUrl": "https://images.unsplash.com/photo-1544714419-3465254191ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwYW5qaW0lMjBnb2F8ZW58MHx8fHwxNzcxOTYwMTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "panjim goa"
+    },
+    {
+      "id": "state-goa-city-margao",
+      "imageUrl": "https://images.unsplash.com/photo-1700847364994-617119b07719?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJnYW8lMjBjaXR5fGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "margao city"
+    },
+    {
+      "id": "state-goa-city-vasco",
+      "imageUrl": "https://images.unsplash.com/photo-1754222300808-40b5f3892cbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx2YXNjbyUyMGRhJTIwZ2FtYSUyMHBvcnR8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vasco da gama port"
+    },
+    {
+      "id": "state-goa-place-baga",
+      "imageUrl": "https://picsum.photos/seed/bagabeach/600/400",
+      "imageHint": "baga beach crowd"
+    },
+    {
+      "id": "state-goa-place-dudhsagar",
+      "imageUrl": "https://images.unsplash.com/photo-1706766958001-176b3d7800ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkdWRoc2FnYXIlMjBmYWxscyUyMHRyYWlufGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dudhsagar falls train"
+    },
+    {
+      "id": "state-goa-place-aguada",
+      "imageUrl": "https://images.unsplash.com/photo-1694931537879-23b9b4b68aea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmb3J0JTIwYWd1YWRhJTIwZ29hfGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fort aguada goa"
+    },
+    {
+      "id": "state-goa-gallery-1",
+      "imageUrl": "https://images.unsplash.com/photo-1702799464761-29b1200c9549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb2ElMjBjaHVyY2h8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "goa church"
+    },
+    {
+      "id": "state-goa-gallery-2",
+      "imageUrl": "https://images.unsplash.com/photo-1724737419548-1e733c69efd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnb2ElMjBtYXJrZXR8ZW58MHx8fHwxNzcxOTYwMTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "goa market"
+    },
+    {
+      "id": "state-goa-gallery-3",
+      "imageUrl": "https://picsum.photos/seed/goaimg3/600/400",
+      "imageHint": "goan food"
+    },
+    {
+      "id": "goa-exp-beach-hopping",
+      "description": "People walking on a beautiful Goa beach.",
+      "imageUrl": "https://images.unsplash.com/photo-1682743710558-b338ba285925?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxHb2ElMjBiZWFjaHxlbnwwfHx8fDE3NzE5NjAxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Goa beach"
+    },
+    {
+      "id": "goa-exp-water-sports",
+      "description": "Someone parasailing over the ocean in Goa.",
+      "imageUrl": "https://images.unsplash.com/photo-1547581439-24375bb8d904?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwYXJhc2FpbGluZyUyMG9jZWFufGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "parasailing ocean"
+    },
+    {
+      "id": "goa-exp-nightlife",
+      "description": "A vibrant beach party in Goa at night.",
+      "imageUrl": "https://images.unsplash.com/photo-1631012202313-32a77a595004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZWFjaCUyMHBhcnR5fGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beach party"
+    },
+    {
+      "id": "dest-goa",
+      "imageUrl": "/my-images/goa-card.jpg",
+      "imageHint": "Goa beach",
+      "description": "A beautiful view of a Goa."
+    },
+    {
+      "id": "state-uttarakhand-banner",
+      "imageUrl": "https://images.unsplash.com/photo-1641121289423-116400cebc11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoaW1hbGF5YXMlMjB1dHRhcmFraGFuZHxlbnwwfHx8fDE3NzE5NjAxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "himalayas uttarakhand"
+    },
+    {
+      "id": "state-uttarakhand-city-dehradun",
+      "imageUrl": "https://images.unsplash.com/photo-1658316342181-1b90e17734ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZWhyYWR1biUyMGNpdHl8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dehradun city"
+    },
+    {
+      "id": "state-uttarakhand-city-nainital",
+      "imageUrl": "https://images.unsplash.com/photo-1610715936287-6c2ad208cdbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuYWluaXRhbCUyMGxha2V8ZW58MHx8fHwxNzcxOTYwMTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nainital lake"
+    },
+    {
+      "id": "state-uttarakhand-city-rishikesh",
+      "imageUrl": "https://images.unsplash.com/photo-1646153110989-a9a8f03314f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyaXNoaWtlc2glMjBnYW5nZXN8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rishikesh ganges"
+    },
+    {
+      "id": "state-uttarakhand-place-valleyflowers",
+      "imageUrl": "https://images.unsplash.com/photo-1600707656536-c5ace2c14c29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx2YWxsZXklMjBvZiUyMGZsb3dlcnN8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "valley of flowers"
+    },
+    {
+      "id": "state-uttarakhand-place-jimcorbett",
+      "imageUrl": "https://images.unsplash.com/photo-1634273182550-40960b2d6f88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0aWdlciUyMHdpbGRsaWZlfGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tiger wildlife"
+    },
+    {
+      "id": "state-uttarakhand-place-lakshmanjhula",
+      "imageUrl": "https://images.unsplash.com/photo-1768248467871-3d27ff8424f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsYWtzaG1hbiUyMGpodWxhJTIwYnJpZGdlfGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lakshman jhula bridge"
+    },
+    {
+      "id": "state-uttarakhand-gallery-1",
+      "imageUrl": "https://images.unsplash.com/photo-1716573260891-23ad993e8833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYW5nYSUyMGFhcnRpfGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ganga aarti"
+    },
+    {
+      "id": "state-uttarakhand-gallery-2",
+      "imageUrl": "https://images.unsplash.com/photo-1631377952034-a0460eba141f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoaW1hbGF5YW4lMjBtb3VudGFpbnN8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "himalayan mountains"
+    },
+    {
+      "id": "state-uttarakhand-gallery-3",
+      "imageUrl": "https://images.unsplash.com/photo-1661082567689-7e3e63d9912f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx1dHRhcmFraGFuZCUyMGZvb2R8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "uttarakhand food"
+    },
+    {
+      "id": "state-ladakh-banner",
+      "imageUrl": "https://images.unsplash.com/photo-1731317607863-216abbe7312c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGFkYWtoJTIwbW9uYXN0ZXJ5JTIwbW91bnRhaW5zfGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ladakh monastery mountains"
+    },
+    {
+      "id": "state-ladakh-city-leh",
+      "imageUrl": "https://images.unsplash.com/photo-1636803422885-c307b57b6a9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsZWglMjB0b3duJTIwbGFkYWtofGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "leh town ladakh"
+    },
+    {
+      "id": "state-ladakh-city-kargil",
+      "imageUrl": "https://images.unsplash.com/photo-1653101538908-65ad083487ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxrYXJnaWwlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kargil landscape"
+    },
+    {
+      "id": "state-ladakh-place-pangong",
+      "imageUrl": "https://images.unsplash.com/photo-1693236052678-22c4745dfc97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwYW5nb25nJTIwbGFrZSUyMGxhZGFraHxlbnwwfHx8fDE3NzE5NjAxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pangong lake ladakh"
+    },
+    {
+      "id": "state-ladakh-place-nubra",
+      "imageUrl": "https://images.unsplash.com/photo-1641739272714-762cda025b28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxudWJyYSUyMHZhbGxleSUyMGNhbWVsfGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nubra valley camel"
+    },
+    {
+      "id": "state-ladakh-place-thiksey",
+      "imageUrl": "https://images.unsplash.com/photo-1708945124506-e1b2baeb2dd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0aGlrc2V5JTIwbW9uYXN0ZXJ5fGVufDB8fHx8MTc3MTk2MDExM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "thiksey monastery"
+    },
+    {
+      "id": "dest-ladakh",
+      "imageUrl": "/my-images/ladakh_monastery.jpg",
+      "imageHint": "Ladakh monastery"
+    },
+    {
+      "id": "state-ladakh-gallery-1",
+      "imageUrl": "https://images.unsplash.com/photo-1667186664456-464c1fda29a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYWduZXRpYyUyMGhpbGwlMjBsYWRha2h8ZW58MHx8fHwxNzcxOTYwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "magnetic hill ladakh"
+    },
+    {
+      "id": "state-ladakh-gallery-2",
+      "imageUrl": "https://images.unsplash.com/photo-1642418222462-b1bf8abc692c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsYWRha2glMjBwcmF5ZXIlMjBmbGFnc3xlbnwwfHx8fDE3NzE5NjAxMTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ladakh prayer flags"
+    },
+    {
+      "id": "state-ladakh-gallery-3",
+      "imageUrl": "https://images.unsplash.com/photo-1707635569223-c759b3b0501b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYWRha2hpJTIwZm9vZHxlbnwwfHx8fDE3NzE5NjAxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ladakhi food"
+    },
+    {
+      "id": "uttarakhand-exp-yoga",
+      "description": "A person meditating by the Ganges river in Rishikesh.",
+      "imageUrl": "https://images.unsplash.com/photo-1611800065908-233b597db552?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx5b2dhJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NzE2NDUxMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "yoga meditation"
+    },
+    {
+      "id": "uttarakhand-exp-rafting",
+      "description": "A group of people river rafting in the Ganges.",
+      "imageUrl": "https://images.unsplash.com/photo-1594026634827-fe99c0a22e83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyaXZlciUyMHJhZnRpbmd8ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "river rafting"
+    },
+    {
+      "id": "uttarakhand-exp-cafes",
+      "description": "A cozy cafe with a view of the mountains in Rishikesh.",
+      "imageUrl": "https://images.unsplash.com/photo-1745914415809-41c5f233b1ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2FmZSUyMHZpZXd8ZW58MHx8fHwxNzcxNzU4OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cafe view"
+    },
+    {
+      "id": "uttarakhand-exp-beatles",
+      "description": "Graffiti art inside the Beatles Ashram in Rishikesh.",
+      "imageUrl": "https://images.unsplash.com/photo-1609786234375-f3cd71b66f7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiZWF0bGVzJTIwYXNocmFtfGVufDB8fHx8MTc3MTc1ODk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beatles ashram"
+    },
+    {
+      "id": "dest-varanasi",
+      "imageUrl": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Varanasi ghats"
+    },
+    {
+      "id": "dest-agra",
+      "imageUrl": "https://images.unsplash.com/photo-1564507592333-c60657eea523?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Taj Mahal Agra"
+    },
+    {
+      "id": "dest-hampi",
+      "imageUrl": "https://images.unsplash.com/photo-1581333100576-b73bbe793a53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Hampi ruins"
+    },
+    {
+      "id": "dest-coorg",
+      "imageUrl": "https://images.unsplash.com/photo-1590496589631-409e530b1ba3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Coorg coffee plantation"
+    },
+    {
+      "id": "dest-pondicherry",
+      "imageUrl": "https://images.unsplash.com/photo-1589793463308-656de43bec27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Pondicherry french quarter"
+    },
+    {
+      "id": "dest-amritsar",
+      "imageUrl": "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Golden Temple Amritsar"
+    },
+    {
+      "id": "dest-shillong",
+      "imageUrl": "https://images.unsplash.com/photo-1617238662933-281b36528734?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Shillong hills"
+    },
+    {
+      "id": "dest-dalhousie",
+      "imageUrl": "https://images.unsplash.com/photo-1596481744044-c6f3768f5664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Dalhousie mountains"
+    },
+    {
+      "id": "dest-darjeeling",
+      "imageUrl": "https://images.unsplash.com/photo-1544468266-6a8948003cc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Darjeeling tea garden"
+    },
+    {
+      "id": "dest-jaisalmer",
+      "imageUrl": "https://images.unsplash.com/photo-1627844718626-40788732168c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Jaisalmer fort"
+    },
+    {
+      "id": "dest-gokarna",
+      "imageUrl": "https://images.unsplash.com/photo-1634300302213-91df639c4d92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Gokarna beach"
+    },
+    {
+      "id": "dest-kodaikanal",
+      "imageUrl": "https://images.unsplash.com/photo-1625902120021-36ba97841c2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Kodaikanal lake"
+    },
+    {
+      "id": "dest-ooty",
+      "imageUrl": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Ooty hills"
+    },
+    {
+      "id": "dest-mumbai",
+      "imageUrl": "https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Mumbai Gateway of India"
+    },
+    {
+      "id": "dest-lonavala",
+      "imageUrl": "https://images.unsplash.com/photo-1626294321151-69ced5e533c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Lonavala landscape"
+    },
+    {
+      "id": "dest-kutch",
+      "imageUrl": "https://images.unsplash.com/photo-1627891544005-eaaba033878b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Rann of Kutch white desert"
+    },
+    {
+      "id": "dest-khajuraho",
+      "imageUrl": "https://images.unsplash.com/photo-1628151246736-a365bb549303?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Khajuraho temple"
+    },
+    {
+      "id": "dest-srinagar",
+      "imageUrl": "https://images.unsplash.com/photo-1598305312384-d6d0202dc3b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Dal Lake Srinagar"
+    },
+    {
+      "id": "dest-gulmarg",
+      "imageUrl": "https://images.unsplash.com/photo-1651833198544-77041697262c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Gulmarg snow mountains"
+    },
+    {
+      "id": "dest-havelock",
+      "imageUrl": "https://images.unsplash.com/photo-1589136142558-94675c602421?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Havelock Island beach"
+    },
+    {
+      "id": "dest-lucknow",
+      "imageUrl": "https://images.unsplash.com/photo-1662900760447-0624d7768560?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Lucknow architecture"
+    },
+    {
+      "id": "dest-hyderabad",
+      "imageUrl": "https://images.unsplash.com/photo-1572435221379-3765e9057868?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Hyderabad Charminar"
+    },
+    {
+      "id": "dest-bangalore",
+      "imageUrl": "https://images.unsplash.com/photo-1596761303500-824ef3ca1cf4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Bangalore Vidhana Soudha"
+    },
+    {
+      "id": "dest-tirupati",
+      "imageUrl": "https://images.unsplash.com/photo-1610123598195-26b960339811?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "Tirupati temple"
+    }
+  ]
+}

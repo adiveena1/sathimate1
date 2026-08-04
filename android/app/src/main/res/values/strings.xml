@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Sathimate</string>
+    <string name="title_activity_main">Sathimate</string>
+    <string name="package_name">com.sathimate.app</string>
+    <string name="custom_url_scheme">com.sathimate.app</string>
+</resources>

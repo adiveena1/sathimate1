@@ -1,0 +1,46 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+/build
+
+# production env — NEVER commit
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+/logs
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# firebase local
+firebase-debug.log
+firestore-debug.log
+.firebase/
+.firebaserc
+service-account*.json
+
+# android build output / signing
+android/app/build/
+android/build/
+android/.gradle/
+*.keystore
+*.jks
+*.aab
+*.apk
+key.properties
+
+# misc
+.DS_Store
+*.pem
+.vscode/
+.idea/
